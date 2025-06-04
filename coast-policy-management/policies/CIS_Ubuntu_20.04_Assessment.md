@@ -62,7 +62,7 @@ Extra Configs of true positives:
 
 
 
-| ID | Configs |
+| ID | Configs > true positives |
 | --- | --- |
 | 28543 | Apt purge gdm3 |
 | 28546 | systemctl unmask chronysystemctl enable chronysystemctl start chrony |
