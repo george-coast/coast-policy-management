@@ -1,0 +1,63 @@
+benchmark: "CIS Ubuntu 20.04 LTS Benchmark v1.0.0"
+version: "1.0.0"
+framework: "NIST SP 800-53 Rev. 5"
+mappings:
+  - section: "1.1 - Filesystem Configuration"
+    description: "Disable uncommon filesystems"
+    nist_controls: ["CM-6", "CM-7"]
+
+  - section: "1.3 - APT Configuration"
+    description: "Ensure package integrity via APT"
+    nist_controls: ["SI-7", "CM-5"]
+
+  - section: "1.4 - Secure Boot Settings"
+    description: "BIOS, UEFI, and GRUB security"
+    nist_controls: ["PE-16", "AC-3", "SC-28", "CM-6"]
+
+  - section: "1.5 - Additional Process Hardening"
+    description: "Enable ASLR and disable core dumps"
+    nist_controls: ["SI-16", "SI-7", "SC-39"]
+
+  - section: "1.6 - Kernel Module Loading"
+    description: "Restrict kernel module loading"
+    nist_controls: ["CM-7", "SC-39"]
+
+  - section: "1.7 - Mandatory Access Control"
+    description: "Enable and configure AppArmor"
+    nist_controls: ["AC-3", "SC-12", "SI-4"]
+
+  - section: "2.x - Services and Ports"
+    description: "Disable unused services and ports"
+    nist_controls: ["CM-7", "AC-4"]
+
+  - section: "3.x - Logging Services"
+    description: "Configure rsyslog/journald"
+    nist_controls: ["AU-3", "AU-4", "AU-5", "AU-9"]
+
+  - section: "4.x - Auditd Rules"
+    description: "Configure audit rules for system activity"
+    nist_controls: ["AU-2", "AU-6", "AU-8", "AU-12"]
+
+  - section: "5.1.x - Password Configuration"
+    description: "Enforce password complexity and history"
+    nist_controls: ["IA-5", "IA-2", "AC-7"]
+
+  - section: "5.2.x - PAM Configuration"
+    description: "Set password policies via PAM"
+    nist_controls: ["IA-5", "AC-2"]
+
+  - section: "5.3.x - User Account Settings"
+    description: "Lock inactive or failed login users"
+    nist_controls: ["IA-4", "AC-2", "AC-6"]
+
+  - section: "5.4.x - Privilege and Group Settings"
+    description: "Limit root/sudo access"
+    nist_controls: ["AC-6", "IA-5"]
+
+  - section: "6.x - SSH Configuration"
+    description: "Secure SSH service settings"
+    nist_controls: ["SC-12", "SC-13", "AC-17", "IA-2", "IA-5"]
+
+  - section: "9.x - File Permissions"
+    description: "Secure permissions for sensitive files"
+    nist_controls: ["AC-6", "SC-28", "SC-12"]
