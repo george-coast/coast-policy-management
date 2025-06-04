@@ -1,5 +1,10 @@
 Coast’s Security CIS benchmark assessment
 
+**Document Owner:** Security Team  
+**Effective Date:** 2025-06-04  
+**Review Frequency:** Annually  
+**Version:** 1.0
+
 Purpose
 
 The purpose of this document is to provide an assessment, that looks to view the state of the system after the recommend: https://ncp.nist.gov/checklist/revision/5771 CIS configuration has been applied. As well as provide a procedure guide on how to achieve the CIS configuration score.
