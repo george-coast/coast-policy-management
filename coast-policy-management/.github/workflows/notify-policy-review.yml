@@ -1,0 +1,21 @@
+name: Policy Review Reminder
+
+on:
+  schedule:
+    - cron: '0 12 1 1 *'  # Every January 1st at 12:00 UTC
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Annual Review: Policy Management Policy",
+              body: "Reminder to review `Policy_Management_Policy.md` for annual NIST compliance.",
+              labels: ["policy-review"]
+            })
