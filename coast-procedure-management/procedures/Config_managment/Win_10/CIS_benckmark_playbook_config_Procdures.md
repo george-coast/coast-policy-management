@@ -1,6 +1,6 @@
 Coast Autonomous Secure Configuration Management Procedure guide:
 
-Ubuntu 20.04
+Windows 10
 
 1. Purpose
 
